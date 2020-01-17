@@ -37,7 +37,7 @@ def hit?
     resp = get_user_input
     if resp == 'h'
       deal_card
-      break
+      return 
     elsif resp == 's'
       break
     else
