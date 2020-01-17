@@ -34,7 +34,7 @@ end
 def hit?
   loop do
     prompt_user
-    resp = gets.chomp
+    resp = get_user_input
     if resp == 'h'
       deal_card
       break
