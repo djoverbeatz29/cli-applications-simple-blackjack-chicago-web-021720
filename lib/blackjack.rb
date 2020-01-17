@@ -32,14 +32,16 @@ def initial_round
 end
 
 def hit?
-  prompt_user
-  resp = get_user_input
-  if resp == 'h'
-    deal_card
-  elsif resp == 's'
-  else
-    invalid command
-    prompt_user
+  loop do
+    print "Enter 'h' to hit or 's' to stay: "
+    resp = gets.chomp
+    if resp == 'h'
+      return true
+    elsif resp == 's'
+      return false
+    else
+      puts "Invalid response"
+    end
   end
 end
 
