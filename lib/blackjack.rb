@@ -31,15 +31,15 @@ def initial_round
   total
 end
 
-def hit?
+def hit?(total)
   loop do
     prompt_user
     resp = get_user_input
     if resp == 'h'
-      deal_card
-      return 
+      total += deal_card
+      return total
     elsif resp == 's'
-      break
+      return total
     else
       invalid_command
     end
