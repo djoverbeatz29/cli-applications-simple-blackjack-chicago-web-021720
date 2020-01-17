@@ -1,5 +1,5 @@
 def hit
-  loop do {
+  loop do
     print "Enter 'h' to hit or 's' to stay: "
     resp = gets.chomp
     if resp == 'h'
@@ -9,5 +9,4 @@ def hit
     else
       put "Invalid response"
     end
-  }
 end
