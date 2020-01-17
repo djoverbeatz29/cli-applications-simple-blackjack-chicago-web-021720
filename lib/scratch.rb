@@ -8,5 +8,6 @@ def hit
       return false
     else
       put "Invalid response"
+    end
   }
 end
