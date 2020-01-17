@@ -40,7 +40,7 @@ def hit?
     elsif resp == 's'
       return false
     else
-      puts "Invalid response"
+      invalid_command
     end
   end
 end
