@@ -9,4 +9,5 @@ def hit
     else
       puts "Invalid response"
     end
+  end
 end
