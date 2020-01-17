@@ -36,9 +36,10 @@ def hit?
     prompt_user
     resp = gets.chomp
     if resp == 'h'
-      return true
+      deal_card
+      break
     elsif resp == 's'
-      return false
+      break
     else
       invalid_command
     end
