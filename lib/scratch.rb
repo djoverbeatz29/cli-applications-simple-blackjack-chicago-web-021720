@@ -7,6 +7,6 @@ def hit
     elsif resp == 's'
       return false
     else
-      put "Invalid response"
+      puts "Invalid response"
     end
 end
