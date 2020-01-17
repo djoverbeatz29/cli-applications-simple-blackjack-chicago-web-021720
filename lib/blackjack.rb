@@ -55,6 +55,9 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  total = 0
+  welcome
+  loop do
+  total += initial_round
 end
     
