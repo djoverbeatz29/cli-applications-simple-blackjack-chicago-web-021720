@@ -36,8 +36,11 @@ def hit?
   resp = get_user_input
   if resp == 'h'
     deal_card
-  elsif resp != 's'
-    puts ""
+  elsif resp == 's'
+  else
+    invalid command
+    prompt_user
+  end
 end
 
 def invalid_command
